@@ -14,5 +14,8 @@ jobs:
   publish:
     uses: prayascodes/github-workflows/.github/workflows/gpr-publish.yml@main
 
+    with:
+      release-environment: production
+
     secrets:
       GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
